@@ -1,0 +1,183 @@
+.box{
+    display: flex;
+    border: 1px  black ;
+  }
+  .box1{
+      position: relative; 
+      background-color:rgb(19, 38, 56) ;
+      color: white;
+      padding: 20px;
+      height: 490px;
+      width: 500px; 
+      top: 20px;
+      left: 30px;
+      margin-left: 80px;
+      z-index: -1;
+  }
+  .box2{
+      position: relative;
+      top: 20px;
+      left: 30px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      height: 580px;
+      width: 800px;
+      background-color: white;
+      padding: 20px;
+      
+  }
+  input {
+      margin-left: 100px;
+      padding: 10px;
+      margin-top: 20px;
+      width: 500px;
+  }
+  select{
+      margin-left: 100px;
+      padding: 10px;
+      margin-top: 20px;
+      width: 520px;
+  }
+  .button{
+      margin-left: 250px;
+      width: 100px;
+      background-color:rgb(21, 39, 68) ;
+      color: white;
+      border: none;
+      border-radius: 20px;
+    }
+  .button:hover{
+    background-color: rgb(41, 41, 171);
+  }
+  p{
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      animation: moveUp 6s ease-out ;
+  }
+  ul{
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      animation: moveUp 6s ease-out ;
+    }
+    
+    li:nth-child(2) {
+      animation-delay: 3s; 
+    }
+    
+    li:nth-child(3) {
+      animation-delay: 2.5s; 
+    }
+    li:nth-child(4) {
+      animation-delay: 2s; 
+    }
+    
+    li:nth-child(5) {
+      animation-delay: 1s; 
+    }
+    .a{
+      margin-left: 100px;
+      width: 180px;
+      height: 40px;
+      font-size: 25px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+    }
+    
+    .b{
+      margin-left: 100px;
+      width: 200px; 
+      height: 40px;
+      font-size: 25px;
+      border: none;
+      border-radius:10px;
+      background-color: white;
+    }
+  .a a , .b a{
+      color: gray;
+      text-decoration: none;
+    }
+    
+    .a:hover , .b:hover{
+     background-color: rgb(17, 65, 101);
+     
+    }
+    
+    .a a:hover , .b a:hover{
+      color: white;
+    }
+  .line{
+      position: relative;
+      border: 2px solid  grey;
+      left: 40px;
+  }
+  .rotating-box {
+      display:flex;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      margin-top:0px;
+      background-color: transparent;
+      animation: rotate 10s infinite linear;
+      border: 5px solid rgb(170, 168, 168);
+      z-index: -1;
+      justify-content: space-evenly;
+    }
+  #box1{
+      margin-top: 0px;
+      margin-left: 10px;
+      
+    }
+    
+    #box2{
+      margin-top: 5px;
+      margin-left: 220px;
+      
+    }
+    
+    #box3{
+      margin-top: 9px;
+      margin-left: 500px; 
+    }
+    
+    #box4{
+      margin-top:150px;
+      margin-left: 40px;
+    }
+    
+    #box5{
+      margin-top: 180px;
+      margin-left: 280px;
+    }
+    
+    #box6{
+      margin: 310px;
+      margin-left: 10px;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+        width: 20px;
+        height: 0px;
+        opacity: 0.6; 
+      }
+      
+      to {
+        transform: rotate(360deg);
+        width: 130px;
+        height: 130px;
+        opacity: 0.5;
+      }
+      }
+      
+      @keyframes moveUp {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+      }
+        
